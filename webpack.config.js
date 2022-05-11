@@ -5,7 +5,6 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/index.js',
-    print: './src/print.js',
   },
   devtool: 'inline-source-map',
   devServer: {
@@ -14,7 +13,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Development',
+      template: './src/index.html',
     }),
   ],
 
@@ -22,11 +21,8 @@ module.exports = {
     // filename: 'main.js',
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    clean: true,
   },
-  optimization: {
-    runtimeChunk: 'single',
-  },
+
   module: {
     rules: [
       {
@@ -34,5 +30,8 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
     ],
+  },
+  optimization: {
+    runtimeChunk: 'single',
   },
 };
