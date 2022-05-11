@@ -17,13 +17,12 @@ In further development we adding simple To Do List using only Javascript from sc
 
 ### Preview
 
-https://willystorm.github.io/webpack/
+https://willystorm.github.io/ToDoList/
 
 ### Setup
 
-git clone https://github.com/WillyStorm/webpack.git
-
-cd webpack
+git clone https://github.com/WillyStorm/ToDoList/
+cd ToDoList
 
 ### Video Presentation
 
